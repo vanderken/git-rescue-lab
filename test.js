@@ -31,3 +31,4 @@ const bulkItems = [
 assertEqual(calculateTotal(bulkItems, 'BULK20'), 40, '20% off with BULK20 (5+ items)');
 
 process.exitCode = failures > 0 ? 1 : 0;
+assertEqual(calculateTotal(items, 'HOLIDAY25'), 30, '25% off with HOLIDAY25');
